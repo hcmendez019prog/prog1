@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Reemplaza 'YOUR_PUBLIC_KEY' con tu Public Key de EmailJS
-  emailjs.init('YOUR_PUBLIC_KEY');
+  emailjs.init('32ATqTh8OqU7TIOCS');
 
   const audio = document.getElementById('background-music');
   const audioControl = document.getElementById('audio-control');
