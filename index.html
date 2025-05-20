@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invitación Especial</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <video autoplay muted loop id="background-video">
+    <source src="Waterfalls from Above 10 Hours (No Sound) — 4K Nature Screensaver.mp4" type="video/mp4" />
+    Tu navegador no soporta videos.
+  </video>
+
+  <audio id="background-music" autoplay loop>
+    <source src="Reik, Maluma - Perfecta (Video Oficial) - reikVEVO.mp3" type="audio/mp3" />
+  </audio>
+
+  <div class="container">
+    <div class="card" id="invitation-card">
+      <h1>¡Una Invitación Especial!</h1>
+      <p>
+        Hola, pienso que eres una persona increíble y me encantaría conocerte más.
+        ¿Te gustaría salir a comer pasta, ir al cine o disfrutar de cualquier otro plan juntos?
+      </p>
+      <div class="button-group">
+        <button onclick="handleResponse('Sí')" class="btn btn-yes">Sí</button>
+        <button onclick="handleResponse('No')" class="btn btn-no">No</button>
+      </div>
+      <button id="audio-control" class="audio-toggle">Pausar Música</button>
+    </div>
+
+    <div class="card hidden" id="yes-card">
+      <h2>¡Fantástico, dijiste que sí!</h2>
+      <p>Estoy emocionado por planear algo especial. ¡Te contactaré pronto!</p>
+      <div class="confetti">🎉</div>
+    </div>
+
+    <div class="card hidden" id="no-card">
+      <h2>Entiendo, no hay problema</h2>
+      <p>Espero que podamos seguir conociéndonos como amigos. ¡Gracias por responder!</p>
+      <div class="sad-face">😢</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
